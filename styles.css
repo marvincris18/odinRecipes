@@ -1,14 +1,21 @@
 /* styles.css */
-* {
-  margin: 10;
-  padding: 10;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
+  margin: 0 ;
+  margin-left: 10px ;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  /* outline: 2px solid red; */
 }
 
 body {
-  background-color: lightblue;
+  background-color: white;
  /* text-align: center;*/
 }
 
@@ -40,8 +47,43 @@ a:hover {
   color: yellow;
 }
 
-image {
-  width: 100%;
-  height: auto;
+img {
+  width: auto;
+  height: 250px;
   border: black 2px solid;
+ 
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkblue;
+  background-color: lightcyan;
+  border: 5px solid darkblue;
+  display: inline-block;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  overflow: scroll;
+
+}
+
+.ingredients,
+.steps {
+  font-size: 20px;
+  font-weight: 500;
+  color: darkblue;
+  
+  border: 5px solid darkblue;
+  display: block;
+  max-width: 850px;
+  margin: 30px 10px;
+}
+
+.steps{
+  background-color: lightgreen;
+}
+
+.ingredients{
+  background-color: lightgoldenrodyellow;
 }
